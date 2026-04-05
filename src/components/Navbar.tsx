@@ -44,9 +44,9 @@ export default function Navbar() {
           <img 
             src="/logo2.jpeg" 
             alt="Acier Building Technology" 
-            className="h-8 w-auto rounded-lg transform group-hover:scale-105 transition-transform"
+            className="h-10 w-auto rounded-lg transform group-hover:scale-105 transition-transform"
           />
-          <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
+          <div className="font-logo text-xl md:text-3xl flex items-center gap-1 md:gap-2 font-bold">
             <span className="text-red-500">acieR</span>
             <span className={scrolled || !isHomePage ? "text-brand-light" : "text-white"}>building</span>
             <span className="text-red-500">technology</span>
@@ -54,12 +54,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href}
-              className={`text-[10px] xl:text-sm font-medium uppercase tracking-widest transition-all duration-300 relative group/nav px-4 py-2 rounded-lg ${
+              className={`text-[9px] xl:text-[10px] font-medium uppercase tracking-widest transition-all duration-300 relative group/nav px-3 xl:px-4 py-2 rounded-lg ${
                 location.pathname === link.href 
                   ? "bg-brand-red text-white shadow-lg shadow-brand-red/20" 
                   : "bg-brand-light/80 text-brand-dark hover:bg-brand-red hover:text-white border border-brand-dark/10"
@@ -70,7 +70,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link to="/contact">
-            <Button className="bg-brand-red hover:bg-brand-red/90 text-white rounded-none uppercase tracking-widest text-[10px] xl:text-xs px-4 xl:px-6">
+            <Button className="bg-brand-red hover:bg-brand-red/90 text-white rounded-none uppercase tracking-widest text-[9px] xl:text-[10px] px-3 xl:px-4">
               Get a Quote
             </Button>
           </Link>
