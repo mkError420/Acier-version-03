@@ -92,8 +92,8 @@ export default function About({ showButton = true }: AboutProps) {
           >
             <div className="aspect-square bg-brand-light relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1503387762-592dec583206?auto=format&fit=crop&q=80&w=1000"
-                alt="Construction Collage"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000"
+                alt="Building Construction Site"
                 className="w-full h-full object-cover opacity-90"
                 referrerPolicy="no-referrer"
               />

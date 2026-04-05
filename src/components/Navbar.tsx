@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled || !isHomePage ? "bg-brand-baby-blue/95 backdrop-blur-md border-b border-brand-dark/10 top-0" : "bg-transparent top-0 md:top-10"
+        scrolled || !isHomePage ? "bg-brand-steel border-b border-brand-red/20 top-0" : "bg-transparent top-0 md:top-10"
       }`}
     >
       <div className={`container mx-auto px-6 flex items-center justify-between transition-all duration-300 ${scrolled || !isHomePage ? "py-3" : "py-6"}`}>
@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
           <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
             <span className="text-red-500">acieR</span>
-            <span className="text-brand-dark">building</span>
+            <span className={scrolled || !isHomePage ? "text-brand-light" : "text-brand-dark"}>building</span>
             <span className="text-red-500">technology</span>
           </div>
         </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
               className={`text-[10px] xl:text-sm font-medium uppercase tracking-widest hover:text-brand-red transition-colors relative group/nav ${
                 location.pathname === link.href 
                   ? "text-brand-red" 
-                  : "text-brand-dark/90"
+                  : scrolled || !isHomePage ? "text-brand-light/90" : "text-brand-dark/90"
               }`}
             >
               {link.name}
@@ -78,7 +78,7 @@ export default function Navbar() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className={`lg:hidden p-2 transition-colors duration-500 text-brand-dark`}
+          className={`lg:hidden p-2 transition-colors duration-500 ${scrolled || !isHomePage ? "text-brand-light" : "text-brand-dark"}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -92,7 +92,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-brand-baby-blue border-b border-brand-dark/10 lg:hidden"
+            className="absolute top-full left-0 right-0 bg-brand-steel border-b border-brand-red/20 lg:hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
@@ -100,7 +100,7 @@ export default function Navbar() {
                   key={link.name}
                   to={link.href}
                   className={`text-lg font-medium uppercase tracking-widest flex items-center justify-between group transition-colors ${
-                    location.pathname === link.href ? "text-brand-red" : "text-brand-dark/80"
+                    location.pathname === link.href ? "text-brand-red" : "text-brand-light/80"
                   }`}
                 >
                   {link.name}

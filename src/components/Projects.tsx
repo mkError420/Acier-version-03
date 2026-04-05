@@ -8,7 +8,7 @@ const projects = [
     title: "Industrial Complex A",
     location: "Lyon, France",
     category: "Steel Structure",
-    image: "https://images.unsplash.com/photo-1517089534702-8a9b2e11fb33?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&q=80&w=1000",
   },
   {
     title: "Modern Office Tower",
