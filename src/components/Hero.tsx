@@ -34,16 +34,16 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-brand-baby-blue">
+    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2070"
-          alt="Construction site"
-          className="w-full h-full object-cover opacity-10"
+          alt="Steel Structure Construction"
+          className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-baby-blue via-brand-baby-blue/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/80 to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -65,7 +65,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-6xl md:text-7xl font-bold text-brand-dark leading-[1.1] md:leading-[0.9] tracking-tighter mb-8 uppercase"
+              className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-400 leading-[1.1] md:leading-[0.9] tracking-tighter mb-8 uppercase"
             >
               <motion.span
                 initial={{ opacity: 0, x: -20 }}
@@ -97,7 +97,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-brand-dark/60 text-lg md:text-xl mb-10 leading-relaxed font-light"
+              className="text-white text-lg md:text-xl mb-10 leading-relaxed font-light"
             >
               Our Commitment Since 2012. Since 2012, acieR Building Technology has been dedicated to delivering high-quality construction services across residential, commercial, and humanitarian sectors.
             </motion.p>
@@ -115,7 +115,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="outline" className="border-brand-dark/20 text-brand-dark hover:bg-brand-dark/5 rounded-none px-8 py-7 text-sm uppercase tracking-widest">
+                <Button variant="outline" className="border-brand-dark/20 text-brand-dark hover:bg-gray-600 hover:text-white rounded-none px-8 py-7 text-sm uppercase tracking-widest">
                   Our Services
                 </Button>
               </Link>

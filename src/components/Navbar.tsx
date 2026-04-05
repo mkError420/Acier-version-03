@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
           <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
             <span className="text-red-500">acieR</span>
-            <span className={scrolled || !isHomePage ? "text-brand-light" : "text-brand-dark"}>building</span>
+            <span className={scrolled || !isHomePage ? "text-brand-light" : "text-white"}>building</span>
             <span className="text-red-500">technology</span>
           </div>
         </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
               className={`text-[10px] xl:text-sm font-medium uppercase tracking-widest hover:text-brand-red transition-colors relative group/nav ${
                 location.pathname === link.href 
                   ? "text-brand-red" 
-                  : scrolled || !isHomePage ? "text-brand-light/90" : "text-brand-dark/90"
+                  : "text-brand-light/90"
               }`}
             >
               {link.name}
