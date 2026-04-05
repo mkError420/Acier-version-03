@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-white overflow-hidden border-t border-brand-dark/5">
+    <section className="py-24 bg-brand-light-gray overflow-hidden border-t border-brand-dark/5">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
@@ -56,7 +56,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-brand-light border border-brand-dark/5 p-10 relative group hover:bg-white hover:shadow-2xl transition-all duration-300"
+              className="bg-brand-light border border-brand-dark/5 p-10 relative group hover:bg-brand-light-gray hover:shadow-2xl transition-all duration-300"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (

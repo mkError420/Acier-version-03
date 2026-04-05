@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-white relative overflow-hidden">
+    <section id="contact" className="py-24 bg-brand-light-gray relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
@@ -75,22 +75,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest font-bold text-brand-dark/50">Full Name</label>
-                  <Input className="rounded-none border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12 bg-white" placeholder="John Doe" />
+                  <Input className="rounded-none bg-brand-light/5 border border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12" placeholder="John Doe" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest font-bold text-brand-dark/50">Email Address</label>
-                  <Input className="rounded-none border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12 bg-white" placeholder="john@example.com" />
+                  <Input className="rounded-none bg-brand-light/5 border border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12" placeholder="john@example.com" />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-widest font-bold text-brand-dark/50">Subject</label>
-                <Input className="rounded-none border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12 bg-white" placeholder="Project Inquiry" />
+                <Input className="rounded-none bg-brand-light/5 border border-brand-dark/10 focus:border-brand-red focus:ring-0 h-12" placeholder="Project Inquiry" />
               </div>
 
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-widest font-bold text-brand-dark/50">Message</label>
-                <Textarea className="rounded-none border-brand-dark/10 focus:border-brand-red focus:ring-0 min-h-[150px] bg-white" placeholder="Tell us about your project..." />
+                <Textarea className="rounded-none border-brand-dark/10 focus:border-brand-red focus:ring-0 min-h-[150px] bg-brand-light/5" placeholder="Tell us about your project..." />
               </div>
 
               <Button className="w-full bg-brand-red hover:bg-brand-red/90 text-white rounded-none py-8 text-sm uppercase tracking-widest group">

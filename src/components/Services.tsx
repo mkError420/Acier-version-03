@@ -36,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-white relative overflow-hidden">
+    <section id="services" className="py-32 bg-brand-light-gray relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-brand-red/5 blur-[120px] -z-10 rounded-full animate-pulse" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-brand-dark/5 blur-[100px] -z-10 rounded-full animate-pulse delay-1000" />

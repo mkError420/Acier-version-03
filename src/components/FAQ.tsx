@@ -47,7 +47,7 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="bg-white border border-brand-dark/5 overflow-hidden transition-all duration-300"
+                className="bg-brand-light border border-brand-dark/5 overflow-hidden transition-all duration-300"
               >
                 <motion.button
                   whileHover={{ backgroundColor: "rgba(0,0,0,0.02)" }}

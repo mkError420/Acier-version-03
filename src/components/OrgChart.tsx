@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 const OrgBox = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`border-2 border-brand-dark p-2 text-center font-bold text-[10px] md:text-xs uppercase tracking-tight bg-white shadow-sm hover:shadow-md transition-shadow relative z-10 ${className}`}>
+  <div className={`border-2 border-brand-dark p-2 text-center font-bold text-[10px] md:text-xs uppercase tracking-tight bg-brand-light-gray shadow-sm hover:shadow-md transition-shadow relative z-10 ${className}`}>
     {children}
   </div>
 );
@@ -25,7 +25,7 @@ const Arrow = ({ direction = "down", className = "" }: { direction?: "down" | "l
 
 export default function OrgChart() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-brand-light-gray overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black text-red-600 uppercase tracking-tighter mb-2">
@@ -37,7 +37,7 @@ export default function OrgChart() {
         </div>
 
         {/* Chart Container */}
-        <div className="max-w-5xl mx-auto relative min-h-[850px] p-4 bg-white">
+        <div className="max-w-5xl mx-auto relative min-h-[850px] p-4 bg-brand-light-gray">
           
           {/* Level 1: MD */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2">

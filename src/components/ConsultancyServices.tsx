@@ -57,7 +57,7 @@ export default function ConsultancyServices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 border border-brand-dark/5 hover:border-brand-red/20 transition-all duration-300 group text-center"
+              className="bg-brand-light p-8 border border-brand-dark/5 hover:border-brand-red/20 transition-all duration-300 group text-center"
             >
               <div className="w-12 h-12 bg-brand-light flex items-center justify-center mb-6 mx-auto group-hover:bg-brand-red transition-colors">
                 <service.icon className="w-6 h-6 text-brand-red group-hover:text-white transition-colors" />
