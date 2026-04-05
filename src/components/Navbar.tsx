@@ -78,7 +78,7 @@ export default function Navbar() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className={`lg:hidden p-2 transition-colors duration-500 ${scrolled || !isHomePage ? "text-brand-light" : "text-brand-dark"}`}
+          className={`lg:hidden p-2 transition-colors duration-500 text-brand-red`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
