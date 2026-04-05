@@ -35,7 +35,7 @@ const allProjects = [
     title: "Smart Warehouse",
     location: "Nantes, France",
     category: "Steel Structure",
-    image: "https://images.unsplash.com/photo-1587293855941-91f1fa937d6d?auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&q=80&w=1000",
   },
   {
     title: "Residential Complex",
