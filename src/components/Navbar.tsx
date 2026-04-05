@@ -59,10 +59,10 @@ export default function Navbar() {
             <Link
               key={link.name}
               to={link.href}
-              className={`text-[10px] xl:text-sm font-medium uppercase tracking-widest hover:text-brand-red transition-colors relative group/nav ${
+              className={`text-[10px] xl:text-sm font-medium uppercase tracking-widest transition-all duration-300 relative group/nav px-4 py-2 rounded-lg ${
                 location.pathname === link.href 
-                  ? "text-brand-red" 
-                  : "text-brand-light/90"
+                  ? "bg-brand-red text-white shadow-lg shadow-brand-red/20" 
+                  : "bg-brand-light/80 text-brand-dark hover:bg-brand-red hover:text-white border border-brand-dark/10"
               }`}
             >
               {link.name}
