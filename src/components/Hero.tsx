@@ -43,7 +43,7 @@ export default function Hero() {
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/65 to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
