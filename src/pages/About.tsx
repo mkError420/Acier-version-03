@@ -144,10 +144,10 @@ export default function AboutPage() {
           <img
             src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000"
             alt="About Acier"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-white/40" />
+          <div className="absolute inset-0 bg-white/20" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">

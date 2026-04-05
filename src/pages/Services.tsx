@@ -13,10 +13,10 @@ export default function ServicesPage() {
           <img
             src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=2000"
             alt="Industrial Site"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-white/40" />
+          <div className="absolute inset-0 bg-white/20" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">

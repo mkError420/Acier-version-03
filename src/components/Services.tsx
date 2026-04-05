@@ -38,8 +38,8 @@ export default function Services() {
   return (
     <section id="services" className="py-32 bg-brand-light-gray relative overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-brand-red/5 blur-[120px] -z-10 rounded-full animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-brand-dark/5 blur-[100px] -z-10 rounded-full animate-pulse delay-1000" />
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-brand-red/8 blur-[140px] -z-10 rounded-full animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-brand-dark/8 blur-[130px] -z-10 rounded-full animate-pulse delay-1000" />
       
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 -z-20 opacity-[0.03]" 

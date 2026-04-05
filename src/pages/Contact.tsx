@@ -12,10 +12,10 @@ export default function ContactPage() {
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
             alt="Contact Us"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-white/40" />
+          <div className="absolute inset-0 bg-white/20" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
