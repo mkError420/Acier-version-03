@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-8 group">
               <img 
-                src="/asset/logo.png" 
+                src="/logo.png" 
                 alt="Acier Building Technology" 
                 className="h-8 w-auto transform group-hover:scale-105 transition-transform"
               />
