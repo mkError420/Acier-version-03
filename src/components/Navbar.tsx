@@ -41,9 +41,11 @@ export default function Navbar() {
     >
       <div className={`container mx-auto px-6 flex items-center justify-between transition-all duration-300 ${scrolled || !isHomePage ? "py-3" : "py-6"}`}>
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="bg-brand-red p-1.5 rounded-sm transform group-hover:rotate-12 transition-transform">
-            <Building2 className="w-6 h-6 text-white" />
-          </div>
+          <img 
+            src="/asset/logo.png" 
+            alt="Acier Building Technology" 
+            className="h-8 w-auto transform group-hover:scale-105 transition-transform"
+          />
           <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
             <span className="text-red-500">acieR</span>
             <span className={scrolled || !isHomePage ? "text-brand-light" : "text-white"}>building</span>

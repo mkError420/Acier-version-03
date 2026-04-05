@@ -13,14 +13,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-8 group">
-              <div className="bg-brand-red p-1.5 rounded-sm transform group-hover:rotate-12 transition-transform">
-                <Building2 className="w-6 h-6 text-white" />
+              <img 
+                src="/asset/logo.png" 
+                alt="Acier Building Technology" 
+                className="h-8 w-auto transform group-hover:scale-105 transition-transform"
+              />
+              <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
+                <span className="text-red-500">acieR</span>
+                <span className="text-white">building</span>
+                <span className="text-red-500">technology</span>
               </div>
-          <div className="font-logo text-lg md:text-2xl flex items-center gap-1 md:gap-2 font-bold">
-            <span className="text-red-500">acieR</span>
-            <span className="text-white">building</span>
-            <span className="text-red-500">technology</span>
-          </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed font-light mb-8">
               Pioneering the future of industrial and commercial construction with innovative steel solutions and advanced engineering.
