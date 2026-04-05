@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-8">
           <div className="text-white/20 text-[10px] uppercase tracking-widest font-bold">
-            © {new Date().getFullYear()} Acier Building Tech. All Rights Reserved.
+            © {new Date().getFullYear()} Acier Building Tech. All Rights Reserved. | Develop by MK
           </div>
           
        
